@@ -20,8 +20,8 @@ powButton.addEventListener('click',  step)
 
 
 //Валидность Инпутов 
-inputA.addEventListener('keyup', checkA )
-inputB.addEventListener('keyup', checkB )
+inputA.addEventListener('input', checkA )
+inputB.addEventListener('input', checkB )
 
 function checkA (){
     let input =  Number(inputA.value)
