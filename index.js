@@ -41,9 +41,9 @@ function checkB (){
     }
 }
 
-//Проверяем значение на NaN
+//Проверяем значение на NaN и undefined
 function NaNcheck (value){
-    if(isNaN(value)){
+    if(isNaN(value) || value === 0){
         return document.getElementById("output").innerHTML = `Будь человеком, вводи цифры!!!`;
     }else {
         return document.getElementById("output").innerHTML = `Ответ: ${value.toFixed(2)}`;
