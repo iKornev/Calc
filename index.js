@@ -25,7 +25,6 @@ inputB.addEventListener('keyup', checkB )
 
 function checkA (){
     let input =  Number(inputA.value)
-    
     if (isNaN(input)) {
         inputA.style.color = 'red'
     }else{
@@ -35,7 +34,6 @@ function checkA (){
 
 function checkB (){
     let input =  Number(inputB.value)
-    
     if (isNaN(input)) {
         inputB.style.color = 'red'
     }else{
@@ -56,9 +54,7 @@ function NaNcheck (value){
 function multipie (a,b) {
     a = +inputA.value
     b = +inputB.value
-  
     let result = a*b
-
     NaNcheck(result)
 }
 
@@ -67,18 +63,14 @@ function multipie (a,b) {
 function plus (a,b){  
     a = +inputA.value
     b = +inputB.value
-   
     let result = a+b
-
     NaNcheck(result)
 }
 
 function minus (a,b){
     a = +inputA.value
     b = +inputB.value
-   
     let result = a-b
-
     NaNcheck(result)
 }
 
@@ -86,48 +78,38 @@ function minus (a,b){
 function devide (a,b){
     a = +inputA.value
     b = +inputB.value
-   
     let result = a/b
-
     NaNcheck(result)
 }
 
 function small (a,b){
     a = +inputA.value
     b = +inputB.value
-   
     let result;
-
     if(a > b){
         result = b 
     }else if(a < b){
         result = a 
     }
-
     NaNcheck(result)
 }
 
 function big (a,b){
     a = +inputA.value
     b = +inputB.value
-   
     let result;
-    
     if(a > b){
         result = a 
     }else if(a < b){
         result = b 
     }
-
     NaNcheck(result)
 }
 
 function step (a,b){
     a = +inputA.value
     b = +inputB.value
-   
     let result = a**b
-
     NaNcheck(result)
 }
 
